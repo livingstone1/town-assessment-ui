@@ -1,0 +1,18 @@
+.analytics-page {
+    font-size: 20px;
+}
+
+
+.algorithm.row {
+    display: flex;
+    flex-direction: column;
+
+    & > label {
+        margin-bottom: 10px;
+        margin-left: 14px;
+    }
+}
+
+.row {
+    padding: 0 50px;
+}

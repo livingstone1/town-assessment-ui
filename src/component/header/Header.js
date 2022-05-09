@@ -5,18 +5,23 @@ import settings from '../../resources/settings.png';
 import exit from '../../resources/exit.png';
 import './Header.scss'
 
-export const Header = () => {
+export default function Header() {
     return (
         <header className="page-header">
             <div className="page-header__color">
-                <button className="page-header__assessment">ЭКСПЕРТНАЯ ОЦЕНКА</button>
-                <button className="page-header__analytics">АНАЛИТИКА</button>
-                <button className="page-header__settings"><img className="page-header__settings" src={settings}/>
-                </button>
-                <button className="page-header__exit"><img className="page-header__exit" src={exit}/></button>
+                <div className='logo'>
+                    <img className="page-header__effect" src={effect} alt=""/>
+                    <img className="page-header__bear" src={bear} alt=""/>
+                </div>
+                <div className='routes'>
+                    <button className="page-header__assessment">ЭКСПЕРТНАЯ ОЦЕНКА</button>
+                    <button className="page-header__analytics">АНАЛИТИКА</button>
+                </div>
+                <div className='actions'>
+                    <button className="page-header__settings"><img src={settings} alt=""/></button>
+                    <button className="page-header__exit"><img src={exit} alt=""/></button>
+                </div>
             </div>
-            <img className="page-header__effect" src={effect}/>
-            <img className="page-header__bear" src={bear}/>
         </header>
     )
 }

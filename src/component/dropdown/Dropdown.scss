@@ -1,0 +1,22 @@
+@import '../../mixins';
+
+.dropdown {
+    width: 40%;
+}
+
+.MuiSelect-select {
+    text-align: left;
+
+    padding: 6px 32px 6px 14px !important;
+
+    @include fontFamilyImportant;
+    font-size: 20px !important;
+
+    text-transform: uppercase;
+}
+
+.MuiMenuItem-root {
+    @include fontFamilyImportant;
+    font-size: 20px !important;
+    text-transform: uppercase;
+}

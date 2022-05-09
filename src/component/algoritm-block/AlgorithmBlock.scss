@@ -1,0 +1,68 @@
+@import '../../colors';
+
+.algorithm-block {
+    display: flex;
+    flex-direction: column;
+
+    font-size: 20px;
+
+    text-align: center;
+
+    h2 {
+        text-transform: uppercase;
+
+        padding-bottom: 20px;
+
+        border-bottom: 1px solid $theme-background-color;
+
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+
+        & > *{
+            flex: 1 1 0;
+        }
+        
+        .chart {
+            flex: 3 1 0;
+            width: 100%;
+        }
+
+        .table {
+            display: flex;
+            flex-direction: row;
+
+            padding-right: 50px;
+        }
+        
+        .table table  {     
+            width: 100%;
+            
+            font-weight: 400;
+
+            tr:nth-child(2n+1) {
+                background-color: $odd-row-color;
+            }
+
+            td {
+                text-align: left;
+            }
+            td:nth-child(1) {
+                text-align: center;
+            }
+
+            tr td:nth-child(1) {
+                width: 5%;
+            }
+            tr td:nth-child(2) {
+                width: 75%;
+            }
+            tr td:nth-child(3) {
+                width: 20%;
+            }
+        }
+        
+    }
+}
